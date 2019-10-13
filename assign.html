@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/assign.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid labs_header">
+		<div class="col-lg-1 col-md-1 col-sm-3 col-xs-3 ">
+			<a class="navbar-brand header_logo" href="#"><img src="images/imdplogo.png" class="img-responsive"></a>
+		</div>
+		 <!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		</div>
+		<div class="col-lg-5 col-md-5 col-sm-9 col-xs-12 header_menu_list">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<li><a href="#">MOVIES<span class="sr-only">(current)</span></a></li>
+				<li><a href="#">TV SERIES</a></li>
+				<li><a href="#">NEWS</a></li>
+				<li><a href="#">PHOTOS</a></li>
+				<li><a href="#">EVENTS</a></li>
+				<li><a href="#">TRAILERS</a></li>
+			  </ul>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 paddingTop8 search_bar">
+			<div class="input-group">
+				<input type="hidden" name="search_param" value="all" id="search_param">         
+				<input type="text" class="form-control" name="x" placeholder="Find Movies, Tv Shows, Celebrities, and More...">
+				<div class="input-group-btn search-panel">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					  <span id="search_concept">All</span>  <span class="caret maginLeft40"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+					  <li><a href="#contains"> <span class="glyphicon glyphicon-envelope text-danger"></span> Titles</a></li>
+					  <li><a href="#its_equal"> <span class="glyphicon glyphicon-music text-warning"></span> TV Episodes</a></li>
+					  <li><a href="#greather_than"> <span class="glyphicon glyphicon-user text-success"></span> Names</a></li>
+					  <li><a href="#less_than"><span class="glyphicon glyphicon-book text-primary"></span> Companies </a></li>
+					  <li class="divider"></li>
+					  <li><a href="#all"> <span class="glyphicon glyphicon-picture text-info"></span> Movies</a></li>
+					</ul>
+				</div>
+				<span class="input-group-btn">
+					<button class="btn btn-default search_icon" type="button"><span class="glyphicon glyphicon-search"></span></button>
+				</span>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-2 col-sm-6 col-xs-4 pull-right profile_icons">
+			<ul class="nav_right user_icons">
+				<li>
+					<img src="images/book_mark.png"style="width:18px;">
+				</li>
+				<li><i class="fa fa-support"></i></li>
+				<li>
+					<img src="images/profile_img.png" width="25px" height="25px" class="img-fluid">
+				</li>
+			</ul>
+		</div>
+   </div>
+</nav>
+<section class="banner">
+	<div class="backgroundImg">
+		<div class="container">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+			  <div class="item active">
+				<img src="images/la.jpg" alt="Los Angeles" class="main_image">
+					<div class="textImg">
+						<div class="col-md-9 col-xs-12 movie_main_des">
+							<h3 class="">FILM NAME <span class="yellowText">(2015)</span></h3>
+							<p>R . 120min . Action,Adventure, Sci-Fi 15 May 2015 (USA)</p>
+							<div class="col-md-3"><canvas id="myCanvas" width="200" height="200"></canvas></div>
+							<div class="col-md-9 col-sm-6">
+							<ul class="review_rating nopadding">
+							<li>
+								<span>Your Rating: </span>
+								<span class="star_rating">&#x2605; &#x2605; &#x2605; &#x2605; &#x2605; &#x2605;</span> 
+								<span class="star">&#x2605; &#x2605; &#x2605; &#x2605;</span>
+								<span>6/10</span>  
+							</li>
+							<li>
+								<span>Rating: 8/10 from</span>
+								<span>137,182 users</span>
+								<span>Metascore: 89/100</span>
+							</li>
+							<li>
+								<span>169 user</span> . 
+								<span>502 critic</span>
+								<span>46 from Metacritic.com</span>
+							</li>
+							</ul>
+							
+							</div>
+							<div class="col-md-12 col-sm-6 summary">
+								<h5 class="paddingBottom10">Summary</h5>
+								<p class="paddingBottom10 summary_description">In a stark desert landscape where humanity is broken, two rebels just might be able to restore order:
+								Max, a man of action and of few words, and Furiosa, a woman as action who is looking to make it back to her childhood homeland.
+								</p>
+								<p class="paddingBottom15 summary_description"><b>Director:</b> <span class="yellowText">George Miller</span> <b>. Writers:</b> <span class="yellowText">George Miller, Brendan McCarthy, Nick Lathouris</span> 
+								<b>.Stars:</b>
+								<span class="fury_stars">
+									<img src="images/tom_hardy.PNG"> 
+									<img src="images/charlize.PNG">
+									<img src="images/nicholas.PNG">
+									<img src="images/rosie.PNG">
+									<img src="images/zoe_kravitz.PNG">
+								</span>
+								<span class="tribel_dot">...</span>
+								</p>
+								<span>
+									<div class="dropdown marginRight20">
+										<button class="btn btn-primary dropdown-toggle watch_list" type="button" data-toggle="dropdown">+ WATCHLIST
+										<span class="caret"></span></button>
+									</div>
+								</span>
+								<span>
+									<a href="#" class="btn btn-info watch_list">
+										<span class="glyphicon glyphicon-triangle-right"></span> WATCH TRAILER
+									</a>
+								</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 movie_image">
+							<img src="images/Capture.png" class="img-responsive" style="height: 470px;">
+						</div>
+					</div>
+			  </div>
+
+			  <div class="item">
+				<img src="images/chicago.jpg" alt="Chicago" style="width:100%;">
+			  </div>
+			
+			  <div class="item">
+				<img src="images/ny.jpg" alt="New york" style="width:100%;">
+			  </div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+</section>
+<section class="now_playing">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		  <h6 class="text-uppercase pull-left headingText"><b>Now playing</b><span class="dot">.</span><span>Box Office</span></h6>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 movieListSection">
+		   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hoverDiv">
+			<img src="images/fant_four.jpg" class="img-responsive box-office" alt="img1">
+			<p class="productName text-uppercase"><b>Fantastic four</b></p>
+			<p class="productPrice">$25.7M</p>  
+			<div class="overlay">
+			  <img src="images/play-button.png" class="img-responsive playBtn" alt="play">
+			</div>
+		   </div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hoverDiv">
+			<img src="images/man_for.jpg" class="img-responsive box-office" alt="img1">
+			<p class="productName text-uppercase"><b>The man from u.n.c.l.e.</b></p>
+			<p class="productPrice">$28.5M</p>
+			<div class="overlay">
+			  <img src="images/play-button.png" class="img-responsive playBtn" alt="play">
+			</div>
+		   </div>
+
+		   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hoverDiv">
+			<img src="images/sheep.jpg" class="img-responsive box-office" alt="img1">
+			<p class="productName text-uppercase"><b>Shaun the sheep movie</b></p>
+			<p class="productPrice">$11.2M</p>
+			<div class="overlay">
+			  <img src="images/play-button.png" class="img-responsive playBtn" alt="play">
+			</div>
+		   </div>
+
+		   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hoverDiv">
+			<img src="images/the_gift.png" class="img-responsive box-office" alt="img1">
+			<p class="productName text-uppercase"><b>The gift</b></p>
+			<p class="productPrice">$13.2M</p>
+			<div class="overlay">
+			  <img src="images/play-button.png" class="img-responsive playBtn" alt="play">
+			</div>
+		   </div>
+		   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 hoverDiv">
+			<img src="images/impossibe_five.jpg" class="img-responsive box-office" alt="img1">
+			<p class="productName text-uppercase"><b>Mission:Impossible5</b></p>
+			<p class="productPrice">$13.2M</p>
+			<div class="overlay">
+			  <img src="images/play-button.png" class="img-responsive playBtn" alt="play">
+			</div>
+		   </div>
+		</div>
+	  </div>
+	</div>
+</section>
+<script>
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
+var al=0;
+var start=4.72;
+var cw=context.canvas.width/2;
+var ch=context.canvas.height/2;
+var diff;
+ 
+function progressBar(){
+diff=(al/100)*Math.PI*2;
+context.clearRect(0,0,400,200);
+context.beginPath();
+context.arc(cw,ch,50,0,2*Math.PI,false);
+context.fillStyle='#FFF';
+context.fill();
+context.strokeStyle='#e7f2ba';
+context.stroke();
+context.fillStyle='#000';
+context.strokeStyle='#b3cf3c';
+context.textAlign='center';
+context.lineWidth=15;
+context.font = '10pt Verdana';
+context.beginPath();
+context.arc(cw,ch,50,start,diff+start,false);
+context.stroke();
+context.fillText(al+'%',cw+2,ch+6);
+if(al>=56){
+clearTimeout(bar);
+}
+ 
+al++;
+}
+ 
+var bar=setInterval(progressBar,30);
+</script>
+</body>
+</html>
