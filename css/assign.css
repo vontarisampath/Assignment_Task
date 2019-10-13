@@ -45,6 +45,9 @@ body{
 .glyphicon.glyphicon-search {
 	font-size: 18px;
 }
+.searching_product{
+	font-size: 12px;
+}
 #searchbox {
 	
 	box-shadow: none;
